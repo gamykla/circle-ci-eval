@@ -7,8 +7,7 @@ test:
   override:
     - docker --version
     - docker build -t jelis/hello-world .
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSSWORD   
     - docker run -d -p 8080:8080 jelis/hello-world
     - curl http://localhost:8080
-    - docker push jelis/hello-world
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSSWORD && docker push jelis/hello-world
 
