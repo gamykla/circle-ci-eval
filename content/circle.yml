@@ -1,0 +1,9 @@
+
+machine:
+  services:
+    - docker
+
+test: 
+  override:
+    - docker build -t hello-world .
+
