@@ -7,6 +7,6 @@ test:
   override:
     - docker --version
     - docker build -t hello-world .
-    - docker run -d -p8080:8080 hello-world
+    - docker run -d -p 8080:8080 hello-world
     - curl http://localhost:8080
 
