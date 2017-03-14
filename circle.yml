@@ -1,4 +1,5 @@
 
+# Need to express dependency on docker. however we only get docker 1.9.1 ??
 machine:
   services:
     - docker
@@ -9,7 +10,10 @@ test:
     - docker build -t jelis/hello-world .
     - docker run -d -p 8080:8080 jelis/hello-world
     - curl http://localhost:8080
+    # create an artifact
+    - echo $(docker --version) > $CIRCLE_ARTIFACTS/docker-version-artifact.txt
 
+# push image to a registry
 deployment:
   hub:
     branch: master
