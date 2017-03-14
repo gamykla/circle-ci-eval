@@ -16,14 +16,14 @@ Q & A
 
 - How do we keep secrets?
 >>> at the project level: https://circleci.com/docs/1.0/environment-variables/#setting-environment-variables-for-all-commands-without-adding-them-to-git
->> https://circleci.com/gh/jelis/circle-ci-eval/edit
->> https://circleci.com/gh/jelis/circle-ci-eval/edit#env-vars
->> not super secure
+>>> https://circleci.com/gh/jelis/circle-ci-eval/edit
+>>> https://circleci.com/gh/jelis/circle-ci-eval/edit#env-vars
+>>> not super secure
 
 - how can you limit who has access to secrets?
 
 - deploying to docker registry
->> https://circleci.com/docs/1.0/docker/#deployment-to-a-docker-registry
+>>> https://circleci.com/docs/1.0/docker/#deployment-to-a-docker-registry
 
 - how do we use a different version of docker?
 
