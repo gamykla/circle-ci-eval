@@ -36,6 +36,8 @@ Q & A
 >>> No clear way to do so. You're stuck with the versions they support documented here: https://circleci.com/docs/1.0/docker/#version-support
 
 - are there different roles with different capabilities?
+>>> nope
+
 
 - is there a way to manage different deployment environments?
 >>> In the deployments section of circleci you can deploy to different environments. you can declare different environments yourself as keys under 'deployment' see https://circleci.com/docs/1.0/configuration/#deployment
