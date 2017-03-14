@@ -24,9 +24,10 @@ Q & A
 >>> at the project level: https://circleci.com/docs/1.0/environment-variables/#setting-environment-variables-for-all-commands-without-adding-them-to-git
 >>> https://circleci.com/gh/jelis/circle-ci-eval/edit
 >>> https://circleci.com/gh/jelis/circle-ci-eval/edit#env-vars
->>> not super secure
+>>> not super secure -- would be nice if you could add your own runners that operations could manage which contain some secrets, such as those for deployment etc.
 
 - how can you limit who has access to secrets?
+>>> doesn't appear to be different roles
 
 - deploying to docker registry
 >>> https://circleci.com/docs/1.0/docker/#deployment-to-a-docker-registry
@@ -37,11 +38,17 @@ Q & A
 - are there different roles with different capabilities?
 
 - is there a way to manage different deployment environments?
+>>> In the deployments section of circleci you can deploy to different environments. you can declare different environments yourself as keys under 'deployment' see https://circleci.com/docs/1.0/configuration/#deployment
+>>> you can control which branch is deployed to which environment and can script the deployment.
+>>> Doesn't appear to be support for viewing the state of a deployment environment. Can't look at 'prod' and see which build is deployed
 
 - pricing??
 >>> https://circleci.com/pricing/#build-linux
 >>> bit of an odd pricing model.. you pay for build hosts.
 >>> looks like for $1100 USD /month you could run 5 concurrent builds with 4 parallel jobs each
+
+- authentication
+>>> via Github, bitbucket. No AD support
 
 NB
 =======

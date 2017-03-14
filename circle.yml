@@ -15,6 +15,7 @@ test:
 
 # push image to a registry
 deployment:
+  # deployment target must be unique. 'hub' is a target that will run the commands below to deploy on master builds
   hub:
     branch: master
     commands:
