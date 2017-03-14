@@ -1,5 +1,5 @@
 # circle-ci-eval
-Trying out circleci.com
+Trying out https://circleci.com
 
 Q & A
 =========
